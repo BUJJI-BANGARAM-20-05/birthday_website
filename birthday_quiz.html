@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Birthday Quiz</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="romantic_full_bg"></div>
+
+  <header class="site_header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Birthday<span>Wish</span></a>
+
+      <button class="menu_btn" id="menu_btn">☰</button>
+
+      <ul class="nav_links" id="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="memories.html">Memories</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="birthday_quiz.html" class="active">Quiz</a></li>
+        <li><a href="special_corner.html">Special</a></li>
+        <li><a href="surprise.html">Surprise</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="quiz_page">
+    <section class="quiz_box">
+      <p class="small_title">A Sweet Little Test</p>
+      <h1>How Well Do You Know This Bond? 😌💖</h1>
+      <p class="quiz_intro">
+        Answer these cute, sweet and slightly teasing questions. No pressure,
+        but wrong answers may be remembered forever.
+      </p>
+
+      <div class="quiz_card" id="quiz_card">
+        <div class="quiz_top">
+          <span id="question_count">Question 1</span>
+          <span id="quiz_score">Score: 0</span>
+        </div>
+
+        <h2 id="quiz_question">Question will appear here</h2>
+
+        <div class="quiz_options" id="quiz_options"></div>
+
+        <button class="btn primary_btn quiz_next_btn" id="quiz_next_btn">Next Question</button>
+      </div>
+
+      <div class="quiz_result" id="quiz_result">
+        <h2 id="result_title"></h2>
+        <p id="result_message"></p>
+        <button class="btn secondary_btn" id="restart_quiz">Play Again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Warning: This quiz may cause smiling, blushing and overthinking 💘</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -113,8 +113,8 @@ const quizQuestions = [
   },
   {
     emoji: "🌧️",
-    question: "A girl goes outside in heavy rain without an umbrella. Not one hair gets wet. Why?",
-    options: ["She ran fast", "She wore a cap", "She is bald", "The rain was fake"],
+    question: "A boy goes outside in heavy rain without an umbrella. Not one hair gets wet. Why?",
+    options: ["He ran fast", "He wore a cap", "He is bald", "The rain was fake"],
     correctAnswer: 2,
     explanation: "Correct—she had no hair to get wet."
   },
@@ -128,9 +128,9 @@ const quizQuestions = [
   {
     emoji: "💖",
     question: "Who deserves the biggest birthday smile today?",
-    options: ["The cake", "The balloons", "The birthday girl", "The photographer"],
+    options: ["The cake", "The balloons", "My Bangaram", "The Birthday Boy"],
     correctAnswer: 2,
-    explanation: "Absolutely! Today belongs to the birthday superstar."
+    explanation: "Absolutely! Today belongs to the birthday superstar....nahhh myy starrr."
   }
 ];
 

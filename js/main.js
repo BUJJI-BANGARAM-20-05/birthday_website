@@ -64,7 +64,7 @@ if (surpriseBtn && hiddenMessage) {
 }
 
 function createConfetti() {
-  const emojis = ["🎉", "🎂", "💖", "✨", "🎁", "🌸", "🥳"];
+  const emojis = ["🎉", "🎂", "💖", "✨", "🎁", "🥳","😍","🥰","😘","🥳","💋","👩🏻‍❤️‍👨🏻","🎊","🎀","🎈","❣️","🩷","❤️","💘","💗","💓","💞"];
 
   for (let i = 0; i < 45; i++) {
     const confetti = document.createElement("div");
@@ -84,104 +84,53 @@ function createConfetti() {
 
 const quizQuestions = [
   {
-    question: "What is the safest way to make you smile?",
-    options: [
-      "Give you chocolate",
-      "Send a cute message",
-      "Annoy you lovingly",
-      "All of the above"
-    ],
-    answer: 3
+    emoji: "🎂",
+    question: "How many birthdays does an average person have?",
+    options: ["One", "Every year", "Twelve", "It depends"],
+    correctAnswer: 0,
+    explanation: "Exactly! You are born only once; the rest are birthday anniversaries."
   },
   {
-    question: "What is your most dangerous power?",
-    options: [
-      "Your smile",
-      "Your attitude",
-      "Your cute anger",
-      "Your silent treatment"
-    ],
-    answer: 0
+    emoji: "🕯️",
+    question: "If you have 10 candles and blow out 3, how many candles remain?",
+    options: ["3", "7", "10", "None"],
+    correctAnswer: 2,
+    explanation: "All 10 candles remain—the three are only blown out."
   },
   {
-    question: "If you get angry, what should someone do first?",
-    options: [
-      "Say sorry quickly",
-      "Bring food",
-      "Stay silent and pray",
-      "Call it cute and run away"
-    ],
-    answer: 1
+    emoji: "🐘",
+    question: "Which is heavier: 1 kg of cake or 1 kg of chocolates?",
+    options: ["Cake", "Chocolates", "Both are equal", "Depends on flavour"],
+    correctAnswer: 2,
+    explanation: "One kilogram is one kilogram, no matter what it is."
   },
   {
-    question: "What makes you extra special?",
-    options: [
-      "Your heart",
-      "Your madness",
-      "Your smile",
-      "Everything together"
-    ],
-    answer: 3
+    emoji: "📅",
+    question: "Some months have 30 days and some have 31. How many have 28 days?",
+    options: ["One", "Two", "Six", "All twelve"],
+    correctAnswer: 3,
+    explanation: "Every month has at least 28 days."
   },
   {
-    question: "On your birthday, what do you deserve the most?",
-    options: [
-      "Cake",
-      "Gifts",
-      "Love and attention",
-      "Unlimited pampering"
-    ],
-    answer: 3
+    emoji: "🌧️",
+    question: "A girl goes outside in heavy rain without an umbrella. Not one hair gets wet. Why?",
+    options: ["She ran fast", "She wore a cap", "She is bald", "The rain was fake"],
+    correctAnswer: 2,
+    explanation: "Correct—she had no hair to get wet."
   },
   {
-    question: "What should never disappear from your face?",
-    options: [
-      "Your smile",
-      "Your cute expressions",
-      "Your confidence",
-      "All of these"
-    ],
-    answer: 3
+    emoji: "🥭",
+    question: "You have 5 mangoes and take away 2. How many do you have?",
+    options: ["2", "3", "5", "7"],
+    correctAnswer: 0,
+    explanation: "You took two, so those are the two you have."
   },
   {
-    question: "What is your cutest habit?",
-    options: [
-      "Getting angry for small things",
-      "Smiling without reason",
-      "Acting innocent after doing drama",
-      "All of these"
-    ],
-    answer: 3
-  },
-  {
-    question: "What happens when you say 'I am fine'?",
-    options: [
-      "Everything is actually fine",
-      "Danger level increases",
-      "Someone should immediately apologize",
-      "Both B and C"
-    ],
-    answer: 3
-  },
-  {
-    question: "What is the best birthday gift for you?",
-    options: [
-      "A cute surprise",
-      "A long sweet message",
-      "A beautiful memory",
-      "All of these together"
-    ],
-    answer: 3
-  },
-  {
-    question: "Why is this website made for you?",
-    options: [
-      "Because you are special",
-      "Because your smile matters",
-      "Because you deserve something different",
-      "All of the above"
-    ],
-    answer: 3
+    emoji: "💖",
+    question: "Who deserves the biggest birthday smile today?",
+    options: ["The cake", "The balloons", "The birthday girl", "The photographer"],
+    correctAnswer: 2,
+    explanation: "Absolutely! Today belongs to the birthday superstar."
   }
 ];
 
@@ -294,3 +243,18 @@ if (restartQuiz) {
 }
 
 loadQuizQuestion();
+
+const openLetterBtn = document.getElementById("open_letter_btn");
+const letterIntro = document.getElementById("letter_intro");
+const letterCard = document.getElementById("letter_card");
+
+if (openLetterBtn && letterIntro && letterCard) {
+  openLetterBtn.addEventListener("click", () => {
+    letterIntro.style.display = "none";
+    letterCard.classList.add("opened");
+
+    if (typeof createConfetti === "function") {
+      createConfetti();
+    }
+  });
+}

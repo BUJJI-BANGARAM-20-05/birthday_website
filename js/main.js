@@ -86,102 +86,152 @@ const quizQuestions = [
   {
     question: "Birthday boy, what is the cutest thing you can do today?",
     options: [
-      "Act normal",
-      "Pretend you are not excited",
+      "Act like you are not excited",
+      "Ask for cake first",
       "Smile secretly while reading this",
-      "Accept that you are special"
+      "Say this website is okay-okay"
     ],
-    answer: 3
+    answer: 2
   },
   {
-    question: "What is your most lovable superpower?",
+    question: "What should be your official birthday title today?",
     options: [
-      "Making people smile",
-      "Acting innocent",
-      "Showing attitude cutely",
-      "All of these together"
+      "Normal person",
+      "Mr. Birthday VIP",
+      "Silent hero",
+      "Cake inspector"
     ],
-    answer: 3
+    answer: 1
   },
   {
-    question: "If someone made this whole website for you, what does it mean?",
+    question: "If birthday cake suddenly disappears, who is the prime suspect?",
     options: [
-      "They had free time",
-      "They like coding",
-      "They wanted to make you smile",
-      "You matter more than you think"
+      "The candles",
+      "The spoon",
+      "Birthday boy with an innocent face",
+      "Nobody, it was magic"
     ],
-    answer: 3
+    answer: 2
   },
   {
-    question: "What should happen after you open this birthday surprise?",
+    question: "What is the sweetest thing hidden inside this website?",
     options: [
-      "You ignore it",
-      "You act cool",
-      "You smile and pretend you did not",
-      "You feel loved, because you are"
+      "Feelings written just for you",
+      "Only photos",
+      "Only music",
+      "Only animations"
     ],
-    answer: 3
+    answer: 0
   },
   {
-    question: "What is the correct reaction to a cute birthday wish?",
+    question: "If you pretend this surprise did not touch your heart, what does it mean?",
     options: [
-      "Hmm okay",
-      "Not bad",
-      "I knew it",
-      "A soft smile and a little blush"
+      "You are very serious",
+      "You are caught being cute",
+      "You did not see properly",
+      "You need more cake"
+    ],
+    answer: 1
+  },
+  {
+    question: "What is the birthday rule for you today?",
+    options: [
+      "No smiling allowed",
+      "No drama allowed",
+      "No gifts allowed",
+      "Unlimited pampering allowed"
     ],
     answer: 3
   },
   {
     question: "What makes you dangerous in the sweetest way?",
     options: [
-      "Your smile",
       "Your silence",
-      "Your cute anger",
-      "The way you become unforgettable"
+      "Your birthday mood",
+      "The way you become unforgettable",
+      "Your cake-cutting skills"
+    ],
+    answer: 2
+  },
+  {
+    question: "If I ever miss wishing you properly, what should happen?",
+    options: [
+      "Nothing, ignore it",
+      "Only one sorry is enough",
+      "You forget everything instantly",
+      "I become officially guilty until forgiven"
     ],
     answer: 3
   },
   {
-    question: "If I say you are special, what should you do?",
+    question: "What is the correct reaction to a heartfelt birthday letter?",
     options: [
-      "Deny it",
-      "Argue unnecessarily",
-      "Say 'I know'",
-      "Believe it, because it is true"
+      "Hmm okay",
+      "I will think about it",
+      "A soft smile and a little forgiveness",
+      "Pretend the eyes are not emotional"
+    ],
+    answer: 2
+  },
+  {
+    question: "When you say 'I am fine', what should I understand?",
+    options: [
+      "Emergency: decode the real mood carefully",
+      "Everything is truly fine",
+      "Time to relax",
+      "No reply needed"
+    ],
+    answer: 0
+  },
+  {
+    question: "Why was this birthday website really made?",
+    options: [
+      "To test internet speed",
+      "To make you smile and feel loved",
+      "To confuse you",
+      "To show random pages"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why should the candles be jealous today?",
+    options: [
+      "Because they are melting",
+      "Because cake gets more attention",
+      "Because the room is decorated",
+      "Because your smile shines brighter"
     ],
     answer: 3
   },
   {
-    question: "What is the best birthday gift hidden inside this website?",
+    question: "Who gets extra chances in this quiz today?",
     options: [
-      "Photos",
-      "Music",
-      "Animations",
-      "Feelings written just for you"
+      "The birthday boy only",
+      "The cake only",
+      "The candles only",
+      "Nobody at all"
     ],
-    answer: 3
+    answer: 0
   },
   {
-    question: "If you pretend this surprise did not touch your heart, what will it mean?",
+    question: "After winning this quiz, what can you demand?",
     options: [
-      "You are honest",
-      "You are serious",
-      "You are hiding your smile",
-      "You are caught being cute"
+      "More questions",
+      "A serious lecture",
+      "Treat, smile, and extra attention",
+      "Nothing, stay simple"
     ],
-    answer: 3
+    answer: 2
   },
   {
-    question: "What do you deserve today?",
+    question: "Final question: what is the real secret of this surprise?",
     options: [
-      "Cake",
-      "Gifts",
-      "Wishes",
-      "Love, peace, pampering and endless smiles"
+      "It is just a normal website",
+      "You are deeply loved and truly special",
+      "It was made by mistake",
+      "The quiz is impossible"
     ],
-    answer: 3
+    answer: 1
   }
 ];
 
@@ -272,20 +322,22 @@ function showQuizResult() {
 
   if (quizScore === quizQuestions.length) {
     resultTitle.textContent = "Perfect, Birthday Boy! 🥳💖";
-    resultMessage.textContent = "You got everything right. Maybe you really understood the feelings hidden inside this little surprise.";
+    resultMessage.textContent = "Full marks! Now you cannot pretend this surprise was not cute. Birthday VIP officially wins.";
     createConfetti();
-  } else if (quizScore >= 7) {
+  } else if (quizScore >= 12) {
     resultTitle.textContent = "Almost Perfect 😌✨";
-    resultMessage.textContent = "You did really well. A few answers were missed, but your smile is still the main score today.";
+    resultMessage.textContent = "Very impressive. A few answers slipped, but your birthday charm is still fully active.";
+  } else if (quizScore >= 8) {
+    resultTitle.textContent = "Cute But Suspicious 😏💗";
+    resultMessage.textContent = "Not bad, but I feel you were acting too smart. Birthday boy gets one more chance.";
   } else if (quizScore >= 4) {
-    resultTitle.textContent = "Cute Attempt 😏💗";
-    resultMessage.textContent = "Not bad, but I think you were acting too smart. Retest allowed, because birthday boy gets extra chances.";
-  } else {
     resultTitle.textContent = "Aww, Retest Needed 😂💌";
-    resultMessage.textContent = "This score is suspicious, but still cute. Try again and answer with your heart this time.";
+    resultMessage.textContent = "This score is cute but risky. Try again and answer with your heart, not your attitude.";
+  } else {
+    resultTitle.textContent = "Full Birthday Drama Detected 😂🎂";
+    resultMessage.textContent = "This score is not acceptable. Retest is compulsory, and extra pampering charges may apply.";
   }
 }
-
 if (restartQuiz) {
   restartQuiz.addEventListener("click", () => {
     currentQuestion = 0;
